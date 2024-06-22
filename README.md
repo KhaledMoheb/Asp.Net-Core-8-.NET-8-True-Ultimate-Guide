@@ -7,6 +7,11 @@ Assignments Solutions
 - MVC
 - Routing
 - MS SQL
+- Razor Views
+- Layout View
+- Partial Views
+- View Components
+- Filters
 - Unit Testing ( xUnit )
 - Serilog
 - Middlwares
