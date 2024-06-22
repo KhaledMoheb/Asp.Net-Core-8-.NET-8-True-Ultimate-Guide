@@ -7,31 +7,44 @@
     }
     ViewBag.Title = cityWeather?.CityName;
 }
-<h1>Weather</h1>
-<div>
-    @if (cityWeather is null)
-    {
-        @:Wrong City Code
-        <a href="/">Back to all cities</a>
-    }
-    else
-    {
-        <div class="box cursor-pointer w-30 margin-auto margin-top-200 @cityWeather.TemperatureBackgroundClass">
-            <div class="flex-borderless">
-                <div class="w-50">
-                    <h2>@cityWeather.CityName</h2>
-                    <h4 class="text-grey">@cityWeather.DateAndTime.ToString("dd MMM yyyy")</h4>
-                    <h4 class="text-grey">@cityWeather.DateAndTime.ToString("hh:mm tt")</h4>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/StyleSheet.css?v=1" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h1>Weather</h1>
+        <div>
+            @if (cityWeather is null)
+            {
+                @:Wrong City Code
+                <a href="/">Back to all cities</a>
+            }
+            else
+            {
+                <div class="box cursor-pointer w-30 margin-auto margin-top-200 @cityWeather.TemperatureBackgroundClass">
+                    <div class="flex-borderless">
+                        <div class="w-50">
+                            <h2>@cityWeather.CityName</h2>
+                            <h4 class="text-grey">@cityWeather.DateAndTime.ToString("dd MMM yyyy")</h4>
+                            <h4 class="text-grey">@cityWeather.DateAndTime.ToString("hh:mm tt")</h4>
+                        </div>
+                        <div class="w-50 border-left">
+                            <h1 class="margin-left">@cityWeather.TemperatureFahrenheit <sup class="text-grey">&#8457</sup></h1>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-50 border-left">
-                    <h1 class="margin-left">@cityWeather.TemperatureFahrenheit <sup class="text-grey">&#8457</sup></h1>
+
+                <div class="text-center">
+                    <a href="~/">Back to Weather Home Page</a>
                 </div>
-            </div>
+            }
         </div>
 
-        <div class="text-center">
-            <a href="~/">Back to Weather Home Page</a>
-        </div>
-    }
-</div>
-</>
+    </div>
+</body>
+</html>
