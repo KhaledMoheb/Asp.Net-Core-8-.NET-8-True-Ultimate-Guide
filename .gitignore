@@ -1,5 +1,5 @@
 # Ignore Visual Studio files
-.vs/
+*/.vs/
 *.suo
 *.user
 *.sln.docstates
@@ -9,8 +9,8 @@
 *.nuget.targets
 
 # Ignore build output
-bin/
-obj/
+*/bin/
+*/obj/
 
 # Ignore .NET Core build results
 *.dll
