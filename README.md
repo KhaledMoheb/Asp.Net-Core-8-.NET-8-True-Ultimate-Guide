@@ -5,6 +5,7 @@ Assignments Solutions
 - Web API
 - Minimal API
 - MVC
+- Routing
 - MS SQL
 - Unit Testing ( xUnit )
 - Serilog
