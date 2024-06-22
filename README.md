@@ -21,4 +21,5 @@ Assignments Solutions
 - DTO (Data Transfer Object)
 - Extensions
 - LINQ
-- 
+- Validation Attributes
+    - Custom Validation Attributes
