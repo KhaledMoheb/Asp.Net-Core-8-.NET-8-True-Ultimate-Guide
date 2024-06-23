@@ -1,0 +1,42 @@
+﻿@using ConfigurationDemoSolution.Models
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuration Demo</title>
+    <meta charset="utf-8" />
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Social Media Links</h1>
+
+        @{
+            if (!string.IsNullOrEmpty(ViewBag.socialMediaLinks.Facebook))
+            {
+                <div class="box w-25">
+                    <a href="@ViewBag.socialMediaLinks.Facebook">Facebook</a>
+                </div>
+            }
+            <environment exclude="Development">
+                <div class="box w-25">
+                    <a href="@ViewBag.socialMediaLinks.Instagram">Instagram</a>
+                </div>
+            </environment>
+            if (!string.IsNullOrEmpty(ViewBag.socialMediaLinks.Twitter))
+            {
+                <div class="box w-25">
+                    <a href="@ViewBag.socialMediaLinks.Twitter">Twitter</a>
+                </div>
+            }
+            if (!string.IsNullOrEmpty(ViewBag.socialMediaLinks.Youtube))
+            {
+                <div class="box w-25">
+                    <a href="@ViewBag.socialMediaLinks.Youtube">Youtube</a>
+                </div>
+            }
+        }
+
+    </div>
+
+</body>
+</html>
