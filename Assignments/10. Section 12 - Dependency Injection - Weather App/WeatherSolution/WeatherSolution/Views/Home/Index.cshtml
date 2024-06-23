@@ -1,0 +1,18 @@
+﻿@model List<CityWeather>
+@{
+    ViewBag.Title = "All Cities";
+}
+<div class="page-content">
+    <div class="margin-bottom">
+        <h1>Weather</h1>
+    </div>
+    <div class="margin-top-200 margin-left">
+        <div class="flex">
+            @foreach (CityWeather cityWeather in Model)
+            {
+                // <vc:city-weather-table city-weather="cityWeather"></vc:city-weather-table>
+                @await Component.InvokeAsync("CityWeatherTable", cityWeather);
+            }
+        </div>
+    </div>
+</div>
