@@ -1,0 +1,17 @@
+﻿@model CityWeather
+@{
+	CityWeather cityWeather = Model;
+}
+<div class="box cursor-pointer w-30 @cityWeather.TemperatureBackgroundClass">
+    <div class="flex-borderless">
+        <div class="w-50">
+            <h2>@cityWeather.CityName</h2>
+            <h4 class="text-dark-grey">@cityWeather.DateAndTime.ToString("hh:mm tt")</h4>
+            <a href="~/weather/@cityWeather.CityUniqueCode" class="margin-top">Details</a>
+        </div>
+        <div class="w-50 border-left">
+            <h1 class="margin-left">@cityWeather.TemperatureFahrenheit <sup class="text-grey">&#8457</sup></h1>
+        </div>
+    </div>
+
+</div>
