@@ -1,0 +1,57 @@
+﻿@using StockApp.Models.ViewModels;
+@model StockTrade;
+
+@{
+    ViewBag.Title = "Trade";
+}
+
+<div class="box trading-panel">
+    <div class="flex trading-panel-flex">
+        <div id="stock-price-panel">
+            <div class="stock">
+                <h1 class="stock-title">@Model.StockSymbol @Model.StockName</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>$<span class="price" id="price">@Model.Price.ToString("N")</span></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const token = '@ViewBag.FinnhubToken';
+        const symbol = '@Model.StockSymbol';
+        const socket = new WebSocket(`wss://ws.finnhub.io?token=${token}`);
+
+        socket.addEventListener('open', function(event) {
+            console.log('WebSocket connection opened');
+            socket.send(JSON.stringify({'type':'subscribe', 'symbol': symbol}));
+        });
+
+        socket.addEventListener('message', function(event) {
+            const message = JSON.parse(event.data);
+            console.log('message: ' + message);
+            if (message.type === 'trade') {
+                const trades = message.data;
+                const latestTrade = trades[trades.length - 1];
+                if (latestTrade.s === symbol) {
+                    document.getElementById('price').innerText = latestTrade.p.toFixed(2);
+                }
+            }
+        });
+
+        socket.addEventListener('close', function(event) {
+            console.log('WebSocket connection closed');
+        });
+
+        window.addEventListener('beforeunload', function() {
+            socket.send(JSON.stringify({'type':'unsubscribe', 'symbol': symbol}));
+            socket.close();
+        });
+    });
+</script>

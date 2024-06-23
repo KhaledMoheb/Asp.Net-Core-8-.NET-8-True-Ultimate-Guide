@@ -28,3 +28,4 @@ Assignments Solutions
 - LINQ
 - Validation Attributes
     - Custom Validation Attributes
+- Websocket using Javascript
