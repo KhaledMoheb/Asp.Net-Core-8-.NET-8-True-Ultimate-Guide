@@ -8,7 +8,7 @@ Assignments Solutions
 - Routing
 - MS SQL
 - Razor Views
-- Layout View
+- Layout Views
 - Partial Views
 - View Components
 - Filters

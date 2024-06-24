@@ -41,6 +41,6 @@ appsettings.Development.json
 
 ### Course Information
 
-Course Name: Asp.Net Core 8 (.NET 8) True Ultimate Guide
-Section Name: 11. Section 14 - Configuration - Social Media Links
-Assignment Name: ConfigurationDemoSolution
+- Course Name: Asp.Net Core 8 (.NET 8) True Ultimate Guide
+- Section Name: 11. Section 14 - Configuration - Social Media Links
+- Assignment Name: ConfigurationDemoSolution

@@ -58,6 +58,6 @@ The project includes xUnit tests for validating the functionality of the `Stocks
 
 ## Assignment Details
 
-Course Name: Asp.Net Core 8 (.NET 8) True Ultimate Guide
-Section Name: 13. Section 15 - xUnit - Stocks App
-Assignment Name: StockMarketSolution
+- Course Name: Asp.Net Core 8 (.NET 8) True Ultimate Guide
+- Section Name: 13. Section 15 - xUnit - Stocks App
+- Assignment Name: StockMarketSolution

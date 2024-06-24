@@ -32,6 +32,6 @@ dotnet user-secrets set "FinnhubToken" "api token string"
 
 ## Assignment Details
 
-Course Name: Asp.Net Core 8 (.NET 8) True Ultimate Guide
-Section Name: 12. Section 14 - Configuration - Stocks App
-Assignment Name: StockMarketSolution
+- Course Name: Asp.Net Core 8 (.NET 8) True Ultimate Guide
+- Section Name: 12. Section 14 - Configuration - Stocks App
+- Assignment Name: StockMarketSolution
