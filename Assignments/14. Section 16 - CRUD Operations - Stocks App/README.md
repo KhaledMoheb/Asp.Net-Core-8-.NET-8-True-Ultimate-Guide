@@ -4,7 +4,12 @@ This ASP.NET Core Web Application displays live stock prices with updates from [
 
 ## Overview
 
-This project extends the assignment from **13. Section 15 - xUnit - Stocks App** by adding CRUD operations BuyOrder and SellOrder to the TradeController also to view orders view Orders in the TradeController
+This project extends the assignment from **13. Section 15 - xUnit - Stocks App**
+
+## Changes from previous assignment:
+
+- Create "Trade/Orders" view.
+- "BuyOrder" and "SellOrder" functionality in "Trade/Index" view.
 
 ## Features
 
