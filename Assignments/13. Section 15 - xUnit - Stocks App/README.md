@@ -48,13 +48,13 @@ The project includes xUnit tests for validating the functionality of the `Stocks
 ## Example Tests
 
 - Buy Order Tests:
- - Validate null requests.
- - Validate quantity and price constraints.
- - Validate stock symbol and date constraints.
- - Ensure proper response for valid requests.
+    - Validate null requests.
+    - Validate quantity and price constraints.
+    - Validate stock symbol and date constraints.
+    - Ensure proper response for valid requests.
 
 - Sell Order Tests:
- - Similar validations as buy orders.
+    - Similar validations as buy orders.
 
 ## Assignment Details
 
