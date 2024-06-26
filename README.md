@@ -29,3 +29,5 @@ Assignments Solutions
 - Validation Attributes
     - Custom Validation Attributes
 - Websocket using Javascript
+- PDF Reporting (Rotativa Package)
+- Microsoft Excel Reporting
