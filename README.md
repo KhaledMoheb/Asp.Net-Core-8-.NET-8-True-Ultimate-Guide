@@ -13,6 +13,7 @@ Assignments Solutions
 - View Components
 - Filters
 - Unit Testing ( xUnit )
+- Mocking
 - Serilog
 - Middlwares
 - Repository Pattern

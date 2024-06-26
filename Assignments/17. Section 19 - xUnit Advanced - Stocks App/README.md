@@ -4,12 +4,12 @@ This ASP.NET Core Web Application displays live stock prices with updates from [
 
 ## Overview
 
-This project extends the assignment from **15. Section 17 - Tag Helpers - Stocks App**
+This project extends the assignment from **16. Section 18 - EntityFrameworkCore - Stocks App**
 
 ## Changes from previous assignment:
 
-- Creating StockMarketDbContext and connecting to SQL Server database to store buy orders and sell orders
-- "Trade/OrdersPDF" view that displays list of orders as PDF format.
+- The "Trade/Explore" view shows all popular stock prices and the user can click on any one stock to see the price chart of the selected stock in "Trade/Index" view. In the same page, if the user clicks on a specific stock, it should display the selected stock name, image, price along with "Trade Now" button.
+- When the user clicks on "Trade Now" button, it should redirect to "Trade/Index" view that shows the price chart along with "Sell" and "Buy" buttons as developed already.
 
 ## Features
 
@@ -55,5 +55,5 @@ The project includes xUnit tests for validating the functionality of the `Stocks
 ## Assignment Details
 
 - **Course Name**: Asp.Net Core 8 (.NET 8) True Ultimate Guide
-- **Section Name**: 16. Section 18 - EntityFrameworkCore - Stocks App
+- **Section Name**: 17. Section 19 - xUnit Advanced - Stocks App
 - **Assignment Name**: StockMarketSolution

@@ -4,7 +4,7 @@ This ASP.NET Core Web Application displays live stock prices with updates from [
 
 ## Overview
 
-This project extends the assignment from **15. Section 17 - Tag Helpers - Stocks App**
+This project extends the assignment from **14. Section 16 - CRUD Operations - Stocks App**
 
 ## Changes from previous assignment:
 
@@ -55,5 +55,5 @@ The project includes xUnit tests for validating the functionality of the `Stocks
 ## Assignment Details
 
 - **Course Name**: Asp.Net Core 8 (.NET 8) True Ultimate Guide
-- **Section Name**: 14. Section 16 - CRUD Operations - Stocks App
+- **Section Name**: 15. Section 17 - Tag Helpers - Stocks App
 - **Assignment Name**: StockMarketSolution
