@@ -12,7 +12,7 @@ Assignments Solutions
 - Partial Views
 - View Components
 - Filters
-- Unit Testing ( xUnit )
+- Unit Testing ( xUnit, FluentAssertions, Fizzler )
 - Mocking
 - Serilog
 - Middlwares
