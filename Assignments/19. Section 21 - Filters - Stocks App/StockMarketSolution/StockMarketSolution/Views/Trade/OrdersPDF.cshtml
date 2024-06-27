@@ -1,0 +1,33 @@
+﻿@model List<OrderResponse>
+@{
+    Layout = null;
+}
+
+<link href="~/Stylesheet.css?v=1" rel="stylesheet" />
+
+<h1>Orders</h1>
+<table class="table w-100 mt grey-back">
+    <thead class="thead">
+        <tr>
+            <th>Date and Time</th>
+            <th>Stock</th>
+            <th>Order Type</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Trade Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (OrderResponse orderResponse in Model)
+        {
+            <tr>
+                <td>@orderResponse.DateAndTimeOfOrder.ToString("dd MMMM yyyy hh:mm:ss tt")</td>
+                <td>@orderResponse.StockName (@orderResponse.StockSymbol)</td>
+                <td>@orderResponse.TypeOfOrder</td>
+                <td>@orderResponse.Quantity</td>
+                <td>$ @orderResponse.Price.ToString("N")</td>
+                <td>@orderResponse.TradeAmount.ToString("N")</td>
+            </tr>
+        }
+    </tbody>
+</table>
